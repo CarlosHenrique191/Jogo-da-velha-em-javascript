@@ -1,0 +1,87 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+#jogo{
+    width:603px;
+    height:600px;
+    border: groove 3px;
+    border-image:   linear-gradient(to right,aqua,#ff75da) 5;
+}
+ 
+.linha{
+    height:200px;
+    border-bottom:groove 1px;
+    border-image:   linear-gradient(to right,aqua,#ff75da) 5;
+}
+ 
+.casa{
+    width:200px;
+    height:100%;
+    border-right:groove 1px;
+    float:left;
+    border-image:   linear-gradient(to right,aqua,#ff75da) 5;
+}
+
+/*Art*/
+
+@font-face {
+    font-family: Pacifico;
+    src: url(fontes/KaushanScript-Regular.otf);
+  }
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    animation: animate 7s linear;
+    background: linear-gradient(60deg ,aqua,#ff75da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Pacifico;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 4em;
+    animation: animate 7s linear;
+    background: linear-gradient(60deg ,#ff75da,aqua);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Pacifico;
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+    background: linear-gradient(60deg ,aqua,#ff75da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Pacifico;
+}
+
+body {
+    background: linear-gradient(60deg ,rgb(203, 205, 226),#110b68);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
